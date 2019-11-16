@@ -1,0 +1,22 @@
+.FormTextarea {
+  display: flex;
+}
+
+.FormTextarea_textarea,
+.FormTextarea_preview {
+  flex: 0 1 50%;
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+  min-height: 50vh;
+}
+
+.FormTextarea_textarea {
+  display: block;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.FormTextarea_preview {
+  border: 1px solid #ccc;
+}
