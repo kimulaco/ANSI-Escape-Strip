@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.AppFooter {
+  margin: 0;
+}
+
+.AppFooter_inner {
+  padding: 16px 10px;
+}
+
+.AppFooter_copyright {
+  font-size: 14px;
+  margin: 0;
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.AppHeader {
+  margin: 0;
+}
+
+.AppHeader_inner {
+  padding: 16px 10px;
+}
+
+.AppHeader_title {
+  font-size: 24px;
+  margin: 0;
+}

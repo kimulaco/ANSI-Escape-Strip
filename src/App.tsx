@@ -1,17 +1,17 @@
 import React from 'react'
+import AppHeader from './components/AppHeader/AppHeader'
+import AppMain from './components/AppMain/AppMain'
+import AppFooter from './components/AppFooter/AppFooter'
 import FormTextarea from './components/FormTextarea/FormTextarea'
-import './App.css'
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header>
-        <h1>ANSI Strip Online</h1>
-      </header>
-
-      <main>
+      <AppHeader />
+      <AppMain>
         <FormTextarea />
-      </main>
+      </AppMain>
+      <AppFooter />
     </div>
   )
 }
