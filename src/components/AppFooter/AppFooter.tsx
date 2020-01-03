@@ -6,7 +6,7 @@ const AppFooter: React.FC = () => {
     <footer className="AppFooter">
       <div className="AppFooter_inner">
         <p className="AppFooter_copyright">
-          <small>&copy; 2019 ANSI Strip Online</small>
+          <small>&copy; 2019 ANSI Strip Online.</small>
         </p>
       </div>
     </footer>

@@ -22,4 +22,5 @@
 
 .FormTextarea_preview {
   border: 1px solid #ccc;
+  border-left: 0;
 }
