@@ -4,13 +4,31 @@
   margin: 0;
 }
 
+.AppHeader a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .AppHeader_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   max-width: 1280px;
-  padding: 16px 10px;
+  padding: 16px 16px;
   margin: 0 auto;
 }
 
 .AppHeader_title {
   font-size: 28px;
   margin: 0;
+}
+
+.AppHeader_about {
+  margin: 0;
+  font-size: 16px;
+}
+
+.AppHeader_about-link:hover {
+  text-decoration: underline;
 }
