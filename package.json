@@ -1,5 +1,5 @@
 {
-  "name": "ansi-strip-online",
+  "name": "ansi-escape-strip",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

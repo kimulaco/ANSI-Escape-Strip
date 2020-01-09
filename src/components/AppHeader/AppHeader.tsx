@@ -7,7 +7,7 @@ const AppHeader: React.FC = () => {
     <header className="AppHeader">
       <div className="AppHeader_inner">
         <h1 className="AppHeader_title">
-          <Link className="AppHeader_title-link" to="/">ANSI Strip Online</Link>
+          <Link className="AppHeader_title-link" to="/">ANSI Escape Strip</Link>
         </h1>
         <p className="AppHeader_about">
           <Link className="AppHeader_about-link" to="/about">About</Link>
