@@ -6,12 +6,15 @@
 
 .FormTextarea_textarea,
 .FormTextarea_preview {
+  background: #fff;
   flex: 0 1 50%;
   width: 50%;
   padding: 10px;
   min-width: 50%;
   max-width: 50%;
+  height: 50vh;
   min-height: 50vh;
+  max-height: 50vh;
 }
 
 .FormTextarea_textarea {
@@ -23,4 +26,6 @@
 .FormTextarea_preview {
   border: 1px solid #ccc;
   border-left: 0;
+  overflow: auto;
+  word-break: break-all;
 }

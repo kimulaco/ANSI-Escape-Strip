@@ -2,13 +2,17 @@ import React, { useState } from 'react'
 import stripAnsi from 'strip-ansi'
 import './FormTextarea.css'
 
-const DEFAULT_VALUE = '[31mH[39m[36me[39m[33ml[39m[32ml[39m[35mo[39m [31mW[39m[36mo[39m[33mr[39m[32ml[39m[35md[39m[31m![39m'
+type Props = {
+  value?: string
+}
 
-const FormTextarea: React.FC = () => {
-  const [value, setValue] = useState(DEFAULT_VALUE)
-  const [preview, setPreview] = useState(stripAnsi(DEFAULT_VALUE))
+const FormTextarea: React.FC<Props> = (props: Props) => {
+  const [value, setValue] = useState(props.value || '')
+  const [preview, setPreview] = useState(stripAnsi(value))
 
-  const handleChange = (event: any): void => {
+  const handleChange = (
+    event: React.ChangeEvent<HTMLTextAreaElement>
+  ): void => {
     setValue(event.target.value)
     setPreview(stripAnsi(event.target.value))
   }
@@ -20,9 +24,10 @@ const FormTextarea: React.FC = () => {
         value={value}
         onChange={(event) => {handleChange(event)}}
       />
-      <div className="FormTextarea_preview">
-        {preview}
-      </div>
+      <div
+        className="FormTextarea_preview"
+        dangerouslySetInnerHTML={{ __html: preview }}
+      />
     </div>
   )
 }
