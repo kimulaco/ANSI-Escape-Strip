@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
-.FormTextarea {
+.FormTextarea_label {
+  display: inline-block;
+  margin: 0 0 16px;
+}
+
+.FormTextarea_content {
   display: flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .FormTextarea_textarea,

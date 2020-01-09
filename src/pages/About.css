@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.About h1 {
+  font-size: 32px;
+  margin: 0 0 32px;
+}
+
+.About h2 {
+  font-size: 24px;
+  margin: 32px 0 16px;
+}

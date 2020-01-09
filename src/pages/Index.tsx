@@ -6,7 +6,7 @@ const DEFAULT_VALUE = '[31mH[39m[36me[39m[33ml[39m[32ml[39m[35mo[39m 
 const App: React.FC = () => {
   return (
     <div>
-      <FormTextarea value={DEFAULT_VALUE} />
+      <FormTextarea id="ansi-escape" value={DEFAULT_VALUE} />
     </div>
   )
 }
